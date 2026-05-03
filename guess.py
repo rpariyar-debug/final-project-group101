@@ -52,6 +52,6 @@ if __name__ == "__main__":
 
     print("Accepted requests:", result["accepted"])
     print("Rejected requests:", result["rejected"])
-    print("Total accepted:", result["total_accepted"])
+    print("Total accepgit ted:", result["total_accepted"])
     print("Total rejected:", result["total_rejected"])
     
