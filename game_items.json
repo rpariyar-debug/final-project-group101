@@ -1,0 +1,27 @@
+{
+    "items":
+    {
+    
+    "bad_item": 
+        {
+            "bad_item": "Puffer",
+            "bad_item2": "Electric Eel",
+            "bad_item3": "Bomb"
+        },
+  
+    "healing_item": 
+        {
+            "healing_item": "Health Potion",
+            "healing_item2": "First Aid",
+            "healing_item3": "Magic Fish"
+        },
+  
+    "junk_item": 
+        {
+            "junk_item": "Soda Can",
+            "junk_item2": "Kelp",
+            "junk_item3": "Barnacles"
+        }
+  
+    }
+}
