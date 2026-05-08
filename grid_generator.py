@@ -1,28 +1,48 @@
-import random
+def generate_grid(rows, cols):
+    """
+    Create a game grid.
 
-def generate_hidden_grid(rows, columns, num_fish)
+    Args:
+        rows (int): Number of rows.
+        cols (int): Number of columns.
+
+    Returns:
+        list: A 2D list representing the grid.
+    """
+
     grid = []
 
-    for row_num in range(rows):
+    for _ in range(rows):
         row = []
-        for col_num in range (col):
-            row.append("-")
+
+        for _ in range(cols):
+            row.append("~")
+
         grid.append(row)
 
-
-    fish_count= 0
-    while fish_count < num_fish:
-
-        row= random.randit(0, rows -1)
-        col= random.radint (0, cols -1)
-
-    if grid[row][col] == "-"
-        grid[row][col] = "Fish"
-        fish_count += 1
-""" Check spot > If empty > Place fish > Count it"""
+    return grid
 
 
+def print_grid(grid):
+    """
+    Print the grid to the screen
+
+    Args:
+        grid (list): The game grid.
+
+    Side effects:
+        Prints the grid to the console.
+    """
+    
+    
+    print("+" + "---+" * len(grid[0]))
+
+    for row in grid:
+        print("| " + " | ".join(row) + " |")
+        print("+" + "---+" * len(grid[0]))
 
 
 
-  
+if __name__ == "__main__":
+    game_grid = generate_grid(5, 5)
+    print_grid(game_grid)
