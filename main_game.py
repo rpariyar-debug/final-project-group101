@@ -1,7 +1,6 @@
 from guesses import MoveTracker, get_player_guess
-from duplicates import
-from grid_generator import 
-from healthbar import
+from grid_generator import generate_grid, print_grid
+
 
 def main():
     print(" ")    
@@ -26,11 +25,20 @@ def main():
         print("---------------------------------")
         print(" ")
         
-        grid = 
-        move_tracker = MoveTracker()
-        game_state = 
-        health_bar = 
+        grid = generate_grid(7, 7)
+        move_tracker = MoveTracker(rows=7, columns=7)
         
+        while True:
+            print_grid(grid)
+            
+            row, column = get_player_guess(move_tracker)
+            
+            grid[row][column] = "x"
+            
+            print(f"You selected row {row + 1}, column {column + 1}")
+            print(f"Used moves: {move_tracker.used_moves}")
+            print()
+    
     elif option == '2':
         print(" ")
         print("See ya!")
@@ -38,19 +46,6 @@ def main():
     else:
         raise ValueError("Not a valid option!")
     
-    
-    
-    
-move_tracker = MoveTracker(rows=7, columns=7)
-
-while True:
-    row, column = get_player_guess(move_tracker)
-    
-    print(f"You selected row {row + 1}, column {column + 1}")
-    
-    print(f"Used moves: {move_tracker.used_moves}")
-    
-    print()
-    
 if __name__ == "__main__":
     main()
+    
