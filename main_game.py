@@ -6,6 +6,7 @@ from healthbar import Outcomes
 
 
 def main():
+    # Main menu for game, containing user input for starting game which loads grid
     print(" ")    
     print("|---------------------------------------------------|")
     print("| <°)))>< Welcome to the RAMA Fishing Game! ><(((°> |")
