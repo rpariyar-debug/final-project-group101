@@ -2,7 +2,15 @@ import json
 import random
 
 class Outcomes:
-
+    """Initializes health bar and extracts items from JSON file and places them in random sections on the grid
+    
+    Args:
+        health (int): the amount of health you have throughout the game
+        max_health (int): the max amount of health you have in the game
+    
+    Side effects:
+        Prints to stdout
+    """
     def __init__(self, health=3, max_health=3):
         self.health = health
         self.max_health = max_health
