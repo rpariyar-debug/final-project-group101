@@ -14,7 +14,7 @@ class Outcomes:
         item_group = self.game_items["items"][item_type]
         return random.choice(list(item_group.values()))
 
-"""Grabs random item from key value pair depending on where you choose to fish
+        """Grabs random item from key value pair depending on where you choose to fish
 
         Args:
             bad_item (dict): An item to avoid that can negatively affect your health
