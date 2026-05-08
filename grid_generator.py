@@ -1,3 +1,5 @@
+import random 
+
 def generate_grid(rows, cols):
     """
     Create a game grid.
@@ -22,6 +24,37 @@ def generate_grid(rows, cols):
 
     return grid
 
+def place_fish(grid, fish_count):
+    
+    rows = len(grid)
+    cols = len(grid[0])
+    
+    placed = 0
+    
+    while placed < fish_count:
+        row = random.randint(0, rows - 1)
+        col = random.randint(0, cols - 1)
+        
+        if grid[row][col] == "~":
+            grid[row][col] = "F"
+            placed += 1
+    return grid
+
+def place_items(grid, item_symbol, item_count):
+    rows = len(grid)
+    cols = len(grid[0])
+
+    placed = 0
+
+    while placed < item_count:
+        row = random.randint(0, rows - 1)
+        col = random.randint(0, cols - 1)
+
+        if grid[row][col] == "~":
+            grid[row][col] = item_symbol
+            placed += 1
+
+    return grid
 
 def print_grid(grid):
     """
@@ -46,3 +79,6 @@ def print_grid(grid):
 if __name__ == "__main__":
     game_grid = generate_grid(5, 5)
     print_grid(game_grid)
+    place_fish(game_grid, 5)
+
+    
