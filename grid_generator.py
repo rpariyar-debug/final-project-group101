@@ -25,6 +25,19 @@ def generate_grid(rows, cols):
     return grid
 
 def place_fish(grid, fish_count):
+    """
+    Randomly places fish on empty spots in the grid.
+
+    Args:
+        grid (list): The game grid.
+        fish_count (int): Number of fish to place.
+
+    Returns:
+        list: The updated grid with fish added.
+
+    Side effects:
+        Modifies the original grid by placing fish symbols.
+        """
     
     rows = len(grid)
     cols = len(grid[0])
@@ -41,6 +54,20 @@ def place_fish(grid, fish_count):
     return grid
 
 def place_items(grid, item_symbol, item_count):
+    """
+    Randomly places items on empty spots in the grid.
+
+    Args:
+        grid (list): The game grid.
+        item_symbol (str): Symbol used for the item.
+        item_count (int): Number of items to place.
+
+    Returns:
+        list: The updated grid with items added.
+
+    Side effects:
+        Modifies the original grid by placing item symbols.
+        """
     rows = len(grid)
     cols = len(grid[0])
 
