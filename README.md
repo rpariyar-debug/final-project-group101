@@ -1,6 +1,20 @@
 README
 The RAMA Fishing game is a command line grid based game
 
+| Method/function | Primary author | Techniques demonstrated |
+|---|---|---|
+| generate_grid | Alexander Moore | optional parameters and/or keyword arguments |
+| place_fish | Alexander Moore | comprehensions or generator expressions |
+| __contains__ | Aidan Collins | magic methods other than __init__ |
+| validate_move | Aidan Collins | set operations |
+| get_random_item | Matteo Palma | use of json.load() |
+| print_health | Matteo Palma | f-strings containing expressions |
+
+
+
+
+
+
 Functions: 
 
 Matteo Palma (princemetici/mpalma04)
